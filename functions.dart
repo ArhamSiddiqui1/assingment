@@ -1,14 +1,14 @@
-// import 'allFunctions.dart';
+// // import 'allFunctions.dart';
 
-void main(){
-print(addNums(20, 30));
-}
+// void main(){
+// print(addNums(20, 30));
+// }
 
-addNums(num num1,num num2){
-  // print(num1+num2);
-  return num1+num2;
+// addNums(num num1,num num2){
+//   // print(num1+num2);
+//   return num1+num2;
 
-}
+// }
 
 // studentPercentage( String name, num marks1, num marks2, num marks3){
 //   // String name='ali';
@@ -26,3 +26,21 @@ addNums(num num1,num num2){
 // }
 // return "abc";
 // }
+
+import 'dart:io';
+
+void main(){
+  studentRec(name: "abc",age:"121");
+  studentRec(name: "abc",age:"121");
+  studentRec(name: "abc",age:"121");
+  studentRec(name: "aabc",age:"121", section: "B");
+  studentRec(name: "abc",age:"121");
+  studentRec(name: "abc",age:"121");
+}
+studentRec({  String? name,  String? age, String section="A"}){
+  print(name);
+  print(age);
+  print(section);
+
+}
+

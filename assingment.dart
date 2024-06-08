@@ -24,9 +24,39 @@ void main(){
 //   phone1.values.where((value) => value > 999).forEach((value) {
 //     print(value);
 //   });
+ // CapitalAndCurrency('Pakistan');
+Map<String, double> expenses = {
+  'sun': 3000.0,
+  'mon': 3000.0,
+  'tue': 3234.0,
+};
+if (expenses.containsKey('fri')) {
+  expenses['fri'] = 5000.0;
+} else {
+  expenses['fri'] = 5000.0;
+}
+print(expenses);
+
+}
 
 
 
 
-
+ CapitalAndCurrency(String country) {
+  Map world = {
+  'Pakistan': {'capitalCity': 'Islamabad',
+    'currency': 'Pakistani Rupee',
+    'language': 'Urdu'} ,'India': {
+    'capitalCity': 'Dehli',
+    'currency': 'Indian Rupee',
+    'language': 'Hindi'
+  }
+};
+  if (world.containsKey(country)) {
+    print('Capital: ${world[country]['capitalCity']}');
+    print('Currency: ${world[country]['currency']}');
+     print('Currency: ${world[country]['language']}');
+  } else {
+    print('Country not found in the world map.');
+  }
 }
